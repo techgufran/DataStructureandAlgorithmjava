@@ -4,6 +4,7 @@ public class StringReverseRecursion {
 	public static String reverseString(String str) {
 		// Base case: If the string is empty or has only one character, return the
 		// string itself.
+
 		if (str == null || str.length() <= 1) {
 			return str;
 		}
@@ -14,7 +15,9 @@ public class StringReverseRecursion {
 	}
 
 	public static void main(String[] args) {
-		String inputString = "Hello, World!";
+		System.out.println("enter string ");
+		Scanner scanner = new Scanner(System.in);
+		String inputString = scanner.nextLine();
 		String reversedString = reverseString(inputString);
 		System.out.println("Original String: " + inputString);
 		System.out.println("Reversed String: " + reversedString);
